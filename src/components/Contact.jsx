@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import {
   SiGithub,
   SiLinkedin,
-  SiInstagram,
+  SuInstagram,
   SiGmail,
 } from "react-icons/si";
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
@@ -21,8 +22,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for reaching out! I'll get back to you soon 🚀");
-    setFormData({ name: "", email: "", message: "" });
+
+    emailjs
+      .send(
+        "service_dymbwbn",      // ⚠️ your service ID
+        "template_r752neo",     // ⚠️ your template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "nohPlsYDBfHot5_Ih"     // ⚠️ your public key
+      )
+      .then(() => {
+        alert("Message sent successfully! I'll get back to you soon 🚀");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch((err) => {
+        console.error("EmailJS Error:", err);
+        alert("Failed to send message. Try again!");
+      });
   };
 
   return (
