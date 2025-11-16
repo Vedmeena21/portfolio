@@ -5,15 +5,17 @@ import Skills from "./Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Badm_Sec from "../assets/Badm Sec.jpeg"; // For Badminton Club
-import Webriy from "../assets/webriy.png"; // For Webriy internship
-import Literature from "../assets/literature.png"; // For Literature Committee
+
+// Corrected image path (NO SPACES)
+import Badm_Sec from "../assets/badm_sec.jpeg";
+import Webriy from "../assets/webriy.png";
+import Literature from "../assets/literature.png";
 
 import {
   GDSC,
   IIITians,
   IITB,
-} from "../constants/Constant"; // Removed Sports import
+} from "../constants/Constant";
 
 const Experience = () => {
   useEffect(() => {
@@ -35,7 +37,7 @@ const Experience = () => {
             className="EXPERIENCE mt-16 grid gap-20 max-sm:gap-10 max-sm:grid-cols-1 grid-cols-3"
             data-aos="zoom-in-up"
           >
-            {/* ✅ Webriy Internship (Most Recent) */}
+            {/* Webriy Internship */}
             <Exp_prop
               img={Webriy}
               title="Webriy"
@@ -62,7 +64,7 @@ const Experience = () => {
               para="- Worked as part of the tech team in building and maintaining the IIITians community networking platform connecting students across IIITs."
             />
 
-            {/* Badminton Club, IIIT Vadodara */}
+            {/* Badminton Club */}
             <Exp_prop
               img={Badm_Sec}
               title="Badminton Club, IIIT Vadodara"
@@ -71,7 +73,7 @@ const Experience = () => {
               para="- Served as the Secretary of the Badminton Club at IIIT Vadodara, organizing tournaments and managing club events."
             />
 
-            {/* Literature Committee, IIITV-ICD */}
+            {/* Literature Committee */}
             <Exp_prop
               img={Literature}
               title="Literature Committee, IIITV-ICD"
