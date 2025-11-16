@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 // Corrected image path (NO SPACES)
 import Badm_Sec from "../assets/badm_sec.jpeg";
-import Webriy from "../assets/webriy.png";
+import Webriy from "../assets/Webriy.png";
 import Literature from "../assets/literature.png";
 
 import {
