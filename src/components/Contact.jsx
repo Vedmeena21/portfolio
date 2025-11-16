@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import {
   SiGithub,
   SiLinkedin,
-  SuInstagram,
+  SiInstagram,
   SiGmail,
 } from "react-icons/si";
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
