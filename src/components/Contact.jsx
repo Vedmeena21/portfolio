@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import {
   SiGithub,
   SiLinkedin,
@@ -22,25 +21,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs.send(
-      "service_dymbwbn",
-      "template_r752neo",
-      {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-      },
-      "nohPlsYDBfHot5_Ih"
-    )
-    .then(() => {
-      alert("Message sent successfully! I'll get back to you soon 🚀");
-      setFormData({ name: "", email: "", message: "" });
-    })
-    .catch((err) => {
-      console.error("EmailJS Error:", err);
-      alert("Failed to send message. Try again!");
-    });
+    alert("Thank you for reaching out! I'll get back to you soon 🚀");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -140,3 +122,20 @@ const Contact = () => {
 
             <button
               type="submit"
+              className="mt-2 py-3 px-5 bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-cyan-500 dark:to-slate-200 text-white dark:text-[#00040f] font-semibold text-sm rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <p className="text-[#00040f] dark:text-slate-300 text-center mt-10 tracking-wider capitalize text-sm">
+        Made with 💙 by Ved Prakash Meena & the Open Source Community
+      </p>
+    </section>
+  );
+};
+
+export default Contact;
