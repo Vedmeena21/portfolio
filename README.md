@@ -33,10 +33,11 @@ Full-stack academic management platform with real-time dashboards and streamline
 
 ## 🌐 Connect With Me
 
-- 📧 Email: [sociallyved@gmail.com](mailto:sociallyved@gmail.com)  
+- 📧 Email: [sociallyved@gmail.com](mailto:connect.ved21@gmail.com)  
 - 💼 LinkedIn: [Ved Prakash Meena](https://www.linkedin.com/in/ved-prakash-meena/)  
 - 🛠️ GitHub: [Vedmeena21](https://github.com/Vedmeena21)
 
 ---
 
 > Built with ❤️ using React, Tailwind CSS, MUI, and Vite.
+
