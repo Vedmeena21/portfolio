@@ -47,9 +47,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="p-5 mx-20 mb-10 font-['Poppins'] max-sm:p-2 max-sm:mx-5"
+      className="p-5 mx-5 md:mx-10 lg:mx-20 mb-10 font-['Poppins'] max-sm:p-2"
     >
-      <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-5xl text-center mb-2">
+      <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-3xl sm:text-4xl md:text-5xl text-center mb-2">
         Contact Me
       </h1>
       <p className="text-center text-blue-600 dark:text-cyan-400 font-medium mb-10">
@@ -57,10 +57,10 @@ const Contact = () => {
       </p>
 
       {/* Main Wrapper */}
-      <div className="flex justify-between gap-10 max-md:flex-col bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040f] dark:to-[#0B274C] rounded-3xl shadow-xl p-10">
-        
+      <div className="flex flex-col md:flex-row justify-between gap-10 max-md:gap-6 bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040f] dark:to-[#0B274C] rounded-3xl shadow-xl p-6 sm:p-8 md:p-10">
+
         {/* LEFT SIDE — Info Section */}
-        <div className="flex flex-col justify-center w-1/2 max-md:w-full text-[#00040f] dark:text-slate-300 gap-5">
+        <div className="flex flex-col justify-center w-full md:w-1/2 text-[#00040f] dark:text-slate-300 gap-5">
           <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
 
           {/* Social Icons */}
@@ -109,7 +109,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE — Contact Form */}
-        <div className="w-1/2 max-md:w-full bg-white/90 dark:bg-slate-800/50 p-8 rounded-2xl shadow-inner border border-slate-300 dark:border-slate-700 backdrop-blur-md">
+        <div className="w-full md:w-1/2 bg-white/90 dark:bg-slate-800/50 p-6 sm:p-8 rounded-2xl shadow-inner border border-slate-300 dark:border-slate-700 backdrop-blur-md">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
             <input
               type="text"

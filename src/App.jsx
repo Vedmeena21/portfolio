@@ -45,11 +45,11 @@ const App = () => {
       ) : (
         <div>
           <Navbar />
-          <div className="h-20"></div>
-          <About />    
-          <div className="h-32"></div>
-          <AboutMe />  
-          <div className="h-32"></div>
+          <div className="h-10 sm:h-16 md:h-20"></div>
+          <About />
+          <div className="h-16 sm:h-24 md:h-32"></div>
+          <AboutMe />
+          <div className="h-16 sm:h-24 md:h-32"></div>
           <Experience />
           <Education />
           <Projects />

@@ -36,16 +36,16 @@ const AboutMe = () => {
   return (
     <section
       id="aboutme"
-      className="EXPERIENCE p-5 mx-16 mb-10 font-['Poppins'] overflow-hidden max-sm:p-2 max-sm:mx-5"
+      className="EXPERIENCE p-5 mx-5 md:mx-10 lg:mx-16 mb-10 font-['Poppins'] overflow-hidden max-sm:p-2"
       data-aos="fade-up"
     >
       <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-5xl text-center mb-8 max-sm:text-4xl">
         ABOUT ME
       </h1>
 
-      <div className="WRAPPER mt-12 flex flex-row items-center justify-center gap-10 max-md:flex-col max-md:mx-5 max-md:gap-6">
+      <div className="WRAPPER mt-12 flex flex-col md:flex-row items-center justify-center gap-10 max-md:gap-6">
         {/* Left Side — Short Intro */}
-        <div className="w-[35%] max-md:w-full flex flex-col justify-center text-gray-600 dark:text-slate-400 text-lg leading-relaxed">
+        <div className="w-full md:w-[35%] flex flex-col justify-center text-gray-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
           <p>
             Hey there! I’m{" "}
             <span className="font-semibold text-[#00040f] dark:text-slate-200">
@@ -60,7 +60,7 @@ const AboutMe = () => {
         </div>
 
         {/* Right Side — Your Original Box (slightly right shifted) */}
-        <div className="w-[60%] max-md:w-full flex justify-center items-center pl-6">
+        <div className="w-full md:w-[60%] flex justify-center items-center md:pl-6">
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.85 }}
@@ -68,11 +68,11 @@ const AboutMe = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <div
-              className="relative w-full h-[500px] rounded-xl overflow-hidden p-6
+              className="relative w-full min-h-[400px] md:h-[500px] rounded-xl overflow-hidden p-4 sm:p-6
               bg-gradient-to-tl from-amber-500 via-orange-600 to-yellow-500 dark:from-[#00040f] dark:to-[#0B274C]
               border border-slate-600 dark:border-slate-700 shadow-lg"
             >
-              <div className="grid grid-cols-6 grid-rows-6 gap-4 h-full w-full">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 grid-rows-auto md:grid-rows-6 gap-3 sm:gap-4 h-full w-full">
                 <SkillCard
                   icon={Code}
                   title="Python"

@@ -14,15 +14,15 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="p-5 mx-16 mb-10 font-['Poppins'] max-sm:p-2 max-sm:mx-5"
+      className="p-5 mx-5 md:mx-10 lg:mx-16 mb-10 font-['Poppins'] max-sm:p-2"
     >
       <div className="WRAPPER mt-12">
-        <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-5xl text-center">
+        <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-3xl sm:text-4xl md:text-5xl text-center">
           PROJECTS
         </h1>
 
         <div
-          className="EXPERIENCE mt-16 grid gap-14 max-sm:gap-8 max-sm:grid-cols-1 grid-cols-3"
+          className="EXPERIENCE mt-16 grid gap-8 sm:gap-10 md:gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           data-aos="zoom-in-up"
         >
           <Project_prop

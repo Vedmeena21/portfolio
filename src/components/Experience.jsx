@@ -26,15 +26,15 @@ const Experience = () => {
     <>
       <section
         id="experience"
-        className="p-5 mx-20 mb-10 font-medium font-['Poppins'] max-sm:p-2 max-sm:mx-5"
+        className="p-5 mx-5 md:mx-10 lg:mx-20 mb-10 font-medium font-['Poppins'] max-sm:p-2"
       >
         <div className="WRAPPER mt-12">
-          <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-5xl text-center">
+          <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-3xl sm:text-4xl md:text-5xl text-center">
             EXPERIENCE
           </h1>
 
           <div
-            className="EXPERIENCE mt-16 grid gap-20 max-sm:gap-10 max-sm:grid-cols-1 grid-cols-3"
+            className="EXPERIENCE mt-16 grid gap-10 sm:gap-12 md:gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
             data-aos="zoom-in-up"
           >
             {/* Webriy Internship */}
@@ -43,7 +43,7 @@ const Experience = () => {
               title="Webriy"
               subtitle="Software Developer Intern"
               date="May 2025 - October 2025"
-              para="- Worked as a Backend Developer Intern focusing on building APIs with FastAPI and integrating AI/ML modules for automation and intelligent data processing."
+              para="- Developed an AI chatbot using RAG, LangChain, and LaMini-T5, improving response accuracy and reducing hallucinations by enhancing retrieval + generation steps. Designed and deployed RESTful APIs for efficient document querying, enabling real-time interaction with the knowledge base."
             />
 
             {/* GDSC IIIT Vadodara */}

@@ -31,13 +31,13 @@ const Skills = () => {
 
   return (
     <>
-      <section className="EXPERIENCE p-5 mx-20 mb-10 font-['Poppins'] max-sm:p-2 max-sm:mx-5">
-        <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-5xl text-center max-sm:text-4xl">
+      <section className="EXPERIENCE p-5 mx-5 md:mx-10 lg:mx-20 mb-10 font-['Poppins'] max-sm:p-2">
+        <h1 className="text-[#00040f] dark:text-slate-300 font-extrabold text-3xl sm:text-4xl md:text-5xl text-center max-sm:text-4xl">
           SKILLS
         </h1>
 
         <div
-          className="IMG grid place-content-center p-5 grid-cols-3 gap-4 max-sm:p-2 mt-10"
+          className="IMG grid place-content-center p-5 max-sm:p-2 mt-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4"
           data-aos="zoom-out-up"
         >
           {/* ✅ Core Programming & Web */}

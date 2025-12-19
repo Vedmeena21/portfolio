@@ -3,11 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     @apply overflow-x-hidden scroll-smooth
 }
 
 body {
-
-    @apply dark:bg-[#00040f] bg-[#e2e2e2ab]
+    @apply dark:bg-[#00040f] bg-[#e2e2e2ab] overflow-x-hidden
 }

@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <section className="NAVBAR p-5 mx-20 mt-5 font-['Poppins'] max-sm:p-2 max-sm:mx-5 max-sm:max-h-[48px]">
+      <section className="NAVBAR p-5 mx-5 md:mx-10 lg:mx-20 mt-5 font-['Poppins'] max-sm:p-2 max-sm:max-h-[48px]">
         <div className="NAVBAR flex justify-between capitalize">
           <div className="LOGO">
             <a
@@ -32,7 +32,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="NAVLINKS text-[20px] translate-x-[80px] max-sm:hidden flex gap-12 text-[#00040f] dark:text-[#e1e1e1] ">
+          <div className="NAVLINKS text-[20px] max-sm:hidden flex gap-6 md:gap-8 lg:gap-12 text-[#00040f] dark:text-[#e1e1e1] ">
             <a href="#about" className="hover:text-cyan-500">
               Home
             </a>
