@@ -8,11 +8,11 @@ const Project_prop = (props) => {
       <div className=" border-[#00040f] shadow-xl  bg-[#e1e1e1] dark:bg-transparent dark:border-white border rounded-xl min-h-[370px] max-sm:min-h-[420px] p-7  max-sm:p-3  hover:bg-gradient-to-tl from-[#ccc] to-[#e1e1e1] dark:from-[#00040F] dark:to-[#0B274C]">
         <div className="HEADER">
           <div className="HEADING flex gap-7 max-sm:gap-0">
-            <div className="p-3 ">
+            <div className="p-3 flex-shrink-0">
               <img
                 src={props.img}
                 alt=""
-                className="max-w-[100px] w-full h-auto rounded-full border border-[#00040f]"
+                className="w-[100px] h-[100px] rounded-full border border-[#00040f] object-cover"
               />
             </div>
             <div className="p-3">
@@ -37,12 +37,12 @@ const Project_prop = (props) => {
 
         <p className="text-slate-500 mt-5 text-lg px-5">{props.para}</p>
 
-        <div className="flex gap-2 text-[#00040f] dark:text-slate-200 p-2 pl-5 mt-5 text-3xl">
-          <a href={props.github_link}>
-            <SiGithub />
+        <div className="flex gap-4 items-center text-[#00040f] dark:text-slate-200 p-2 pl-5 mt-5">
+          <a href={props.github_link} className="hover:text-cyan-500 transition-colors">
+            <SiGithub className="text-3xl" />
           </a>
-          <a href={props.link} target="_blank" rel="noreferrer">
-            <SlLink />
+          <a href={props.link} target="_blank" rel="noreferrer" className="hover:text-cyan-500 transition-colors">
+            <SlLink className="text-3xl" />
           </a>
         </div>
       </div>

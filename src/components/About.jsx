@@ -8,7 +8,7 @@ const About = () => {
         id="about"
         className="p-5 mx-5 md:mx-10 lg:mx-20 mb-10 font-medium font-['Poppins'] max-sm:p-2"
       >
-        <div className="WRAPPER mt-12 flex max-sm:flex-col gap-5">
+        <div className="WRAPPER mt-6 flex max-sm:flex-col gap-5">
           <div className="INTRO text-[70px] leading-[80px] font-semibold max-sm:text-[40px] max-sm:leading-[50px] sm:text-[50px] sm:leading-[60px] md:text-[60px] md:leading-[70px] lg:text-[70px] lg:leading-[80px]">
             <h3 className="text-[#00040f] dark:text-white">
               Hi, there! <br />I am
@@ -22,9 +22,10 @@ const About = () => {
               <span className="text-[70px] max-sm:text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] font-semibold">eena</span>
             </span>
 
-            <p className="ABOUT text-xl max-sm:text-[14px] sm:text-[16px] md:text-lg lg:text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 max-w-full md:max-w-[470px] mt-5 pl-1">
-              Programming enthusiast who builds efficient, scalable web solutions
-              to solve real-world problems.
+
+            <p className="ABOUT text-xl max-sm:text-[14px] sm:text-[16px] md:text-lg lg:text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 max-w-full md:max-w-[550px] mt-5 pl-1">
+              Software Developer | AI/ML & Full-Stack Engineering<br />
+              LLMs | RAG | React | FastAPI | C++
             </p>
           </div>
 

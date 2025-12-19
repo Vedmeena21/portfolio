@@ -37,7 +37,7 @@ const Skills = () => {
         </h1>
 
         <div
-          className="IMG grid place-content-center p-5 max-sm:p-2 mt-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4"
+          className="IMG grid place-content-center justify-items-center p-5 max-sm:p-2 mt-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4"
           data-aos="zoom-out-up"
         >
           {/* ✅ Core Programming & Web */}

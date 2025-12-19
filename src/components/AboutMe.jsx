@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
+import ProfileImg from "../assets/profile.jpg";
 import {
   Code,
   FileCode,
@@ -46,16 +47,26 @@ const AboutMe = () => {
       <div className="WRAPPER mt-12 flex flex-col md:flex-row items-center justify-center gap-10 max-md:gap-6">
         {/* Left Side — Short Intro */}
         <div className="w-full md:w-[35%] flex flex-col justify-center text-gray-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
-          <p>
-            Hey there! I’m{" "}
+          {/* Circular Profile Photo */}
+          <div className="mb-6 flex justify-center">
+            <img
+              src={ProfileImg}
+              alt="Ved Prakash Meena"
+              className="w-40 h-40 sm:w-44 sm:h-44 rounded-full object-cover border-4 border-cyan-500 shadow-lg"
+            />
+          </div>
+
+          <p className="mt-4">
+            Final-year CSE student at{" "}
             <span className="font-semibold text-[#00040f] dark:text-slate-200">
-              Ved Prakash Meena
-            </span>
-            , a passionate web and AI developer from IIIT Vadodara.
+              IIIT Vadodara
+            </span>, specializing in AI/ML and Full-Stack development.
           </p>
-          <p className="mt-3">
-            I love crafting digital solutions that combine creativity, design,
-            and smart technology to solve real-world problems.
+          <p className="mt-2">
+            Building with LLMs, RAG, FastAPI, React, and C++. Experience in scalable backend systems and intelligent applications.
+          </p>
+          <p className="mt-2">
+            Open to Software Engineering, AI/ML Engineering, Backend, and Full-Stack roles.
           </p>
         </div>
 

@@ -46,6 +46,27 @@ const Projects = () => {
             github_link="https://github.com/Vedmeena21/AskMyPDF"
             link="https://github.com/Vedmeena21/AskMyPDF"
           />
+          <Project_prop
+            img={IIITV}
+            title="SpendWise - Smart Expense Analyzer"
+            para="Full-stack expense tracker with OCR receipt scanning and budget analytics."
+            github_link="https://github.com/Vedmeena21/SpendWise"
+            link="https://smart-expense-analyser-frontend.onrender.com/"
+          />
+          <Project_prop
+            img={IIITV}
+            title="SHL Assessment Recommendation System"
+            para="AI-powered assessment recommender using RAG, ChromaDB, and Gemini API."
+            github_link="https://github.com/Vedmeena21/SHL_Assessment"
+            link="https://vedshl.vercel.app/"
+          />
+          <Project_prop
+            img={IIITV}
+            title="Dynamic Calendar App"
+            para="Interactive React calendar with event management and localStorage support."
+            github_link="https://github.com/Vedmeena21/DynamicCalender"
+            link="https://github.com/Vedmeena21/DynamicCalender"
+          />
         </div>
       </div>
     </section>
