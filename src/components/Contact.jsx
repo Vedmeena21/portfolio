@@ -103,7 +103,7 @@ const Contact = () => {
           <div className="flex items-center gap-3">
             <FaMapMarkerAlt />
             <span>
-              House Number 1, Govindham Vihar, Ganpati Nagar, Pushkar Road, Ajmer, Rajasthan 305004
+              #40, Sector 56, Gurugram, Haryana 122011, India
             </span>
           </div>
         </div>

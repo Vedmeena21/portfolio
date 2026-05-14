@@ -22,7 +22,7 @@ const Projects = () => {
         </h1>
 
         <div
-          className="EXPERIENCE mt-16 grid gap-8 sm:gap-10 md:gap-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          className="EXPERIENCE mt-16 grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr"
           data-aos="zoom-in-up"
         >
           <Project_prop

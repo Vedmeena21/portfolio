@@ -14,14 +14,17 @@ const Exp_prop = (props) => {
             <p className="text-[#00040f] dark:text-white text-lg my-2">
               {props.subtitle}
             </p>
-            <p className="italic text-sm text-slate-700 dark:text-slate-300">
-              {props.date}
-            </p>
+            <p className="italic text-sm text-slate-700 dark:text-slate-300">{props.date}</p>
+            {props.location && (
+              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">{props.location}</p>
+            )}
           </div>
         </div>
-        <p className="text-sm text-slate-700 dark:text-slate-300 mt-5 p-2 leading-10">
-          {props.para}
-        </p>
+        <ul className="text-sm text-slate-700 dark:text-slate-300 mt-5 p-2 space-y-2">
+          {props.para.split("\n").map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
       </div>
     </>
   );

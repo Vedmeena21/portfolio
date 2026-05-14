@@ -1,29 +1,28 @@
 /* eslint-disable react/prop-types */
 import { SiGithub } from "react-icons/si";
-import { SlLink } from "react-icons/sl";
 
 const Project_prop = (props) => {
   return (
     <>
-      <div className=" border-[#00040f] shadow-xl  bg-[#e1e1e1] dark:bg-transparent dark:border-white border rounded-xl min-h-[370px] max-sm:min-h-[420px] p-7  max-sm:p-3  hover:bg-gradient-to-tl from-[#ccc] to-[#e1e1e1] dark:from-[#00040F] dark:to-[#0B274C]">
+      <div className="border-[#00040f] shadow-xl bg-[#e1e1e1] dark:bg-transparent dark:border-white border rounded-xl p-6 max-sm:p-4 hover:bg-gradient-to-tl from-[#ccc] to-[#e1e1e1] dark:from-[#00040F] dark:to-[#0B274C] flex flex-col h-full">
         <div className="HEADER">
-          <div className="HEADING flex gap-7 max-sm:gap-0">
-            <div className="p-3 flex-shrink-0">
+          <div className="HEADING flex gap-5 max-sm:gap-3">
+            <div className="flex-shrink-0">
               <img
                 src={props.img}
                 alt=""
-                className="w-[100px] h-[100px] rounded-full border border-[#00040f] object-cover"
+                className="w-[90px] h-[90px] max-sm:w-[80px] max-sm:h-[80px] rounded-full border border-[#00040f] object-cover"
               />
             </div>
-            <div className="p-3">
-              <h1 className=" font-semibold tracking-wide bg-clip-text text-transparent bg-gradient-to-r p-1  from-blue-600 to-cyan-600 dark:from-cyan-500 dark:to-slate-200 text-xl mb-2 ">
+            <div className="flex-1 min-w-0">
+              <h1 className="font-semibold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-cyan-500 dark:to-slate-200 text-lg max-sm:text-base mb-2 line-clamp-2">
                 {props.title}
               </h1>
-              <h3 className="text-[#00040f] dark:text-slate-200 p-1 ">
+              <h3 className="text-[#00040f] dark:text-slate-200 text-sm mb-1">
                 Tech Stack
               </h3>
 
-              <div className="flex gap-1 p-1 -translate-x-2">
+              <div className="flex gap-1 flex-wrap">
                 {props.html5}
                 {props.css3}
                 {props.javascript}
@@ -35,14 +34,16 @@ const Project_prop = (props) => {
           </div>
         </div>
 
-        <p className="text-slate-500 mt-5 text-lg px-5">{props.para}</p>
+        <p className="text-slate-500 dark:text-slate-400 mt-4 text-sm max-sm:text-xs px-2 flex-grow">
+          {props.para}
+        </p>
 
-        <div className="flex gap-4 items-center text-[#00040f] dark:text-slate-200 p-2 pl-5 mt-5">
-          <a href={props.github_link} className="hover:text-cyan-500 transition-colors">
-            <SiGithub className="text-3xl" />
+        <div className="flex gap-4 items-center text-[#00040f] dark:text-slate-200 p-2 mt-5">
+          <a href={props.github_link} title="GitHub" className="hover:text-cyan-500 transition-colors">
+            <SiGithub className="text-2xl max-sm:text-xl" />
           </a>
-          <a href={props.link} target="_blank" rel="noreferrer" className="hover:text-cyan-500 transition-colors">
-            <SlLink className="text-3xl" />
+          <a href={props.link} target="_blank" rel="noreferrer" title="Live Link" className="hover:text-cyan-500 transition-colors text-2xl max-sm:text-xl">
+            🔗
           </a>
         </div>
       </div>
