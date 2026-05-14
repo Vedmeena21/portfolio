@@ -103,7 +103,7 @@ const Contact = () => {
           <div className="flex items-center gap-3">
             <FaMapMarkerAlt />
             <span>
-              #40, Sector 56, Gurugram, Haryana 122011, India
+              House No. 40, Sector 56, Gurugram, Haryana 122011, India
             </span>
           </div>
         </div>
