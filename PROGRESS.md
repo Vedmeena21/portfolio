@@ -2,6 +2,8 @@
 
 Working state of the portfolio enhancement. **Read this before reading the codebase.**
 Read [`GUIDELINES.md`](GUIDELINES.md) next — it holds the rules that govern the work.
+When writing or rewriting code, invoke the `/clean-code` skill
+(`.claude/skills/clean-code/SKILL.md`); it is the procedure for applying those rules.
 
 - **Branch:** `feat/dynamic-portfolio` (never work on `master` — Vercel auto-deploys it)
 - **Restore point:** branch `backup/pre-enhancement-2026-08-10`, tag `v0-pre-enhancement`

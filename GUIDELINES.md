@@ -16,6 +16,11 @@ the code wins — then fix `PROGRESS.md`.
 what was verified and how, what is now in progress, and what the next step is. A session
 that leaves no trace forces the next one to start from zero.
 
+**Use the `/clean-code` skill when writing or rewriting code.** It lives at
+`.claude/skills/clean-code/SKILL.md` and turns the rules below into a procedure: what to
+read first, what to gate on while writing, and what evidence to produce before claiming
+something is done.
+
 ---
 
 ## 1. Scope discipline
