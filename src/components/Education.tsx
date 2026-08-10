@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
 import education from "../assets/lottie/education.json";
-import IIITV_Logo from "../assets/IIITV_Logo.png"; // ✅ Updated logo
+import IIITV_Logo from "../assets/IIITV_Logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Education = () => {
+const Education = (): JSX.Element => {
   useEffect(() => {
     AOS.init();
   }, []);

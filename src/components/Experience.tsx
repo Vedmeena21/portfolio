@@ -1,23 +1,17 @@
-"use client";
-
-import Exp_prop from "./Exp_prop";
+import ExperienceCard from "./ExperienceCard";
 import Skills from "./Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, type ReactElement } from "react";
 
-// Corrected image path (NO SPACES)
 import Badm_Sec from "../assets/badm_sec.jpeg";
 import Webriy from "../assets/Webriy.png";
 import Literature from "../assets/literature.png";
 import MercerMettl from "../assets/Mercer Mettl.png";
 
-import {
-  GDSC,
-  IITB,
-} from "../constants/Constant";
+import { GDSC, IITB } from "../constants/assets";
 
-const Experience = () => {
+function Experience(): ReactElement {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -38,7 +32,7 @@ const Experience = () => {
             data-aos="zoom-in-up"
           >
             {/* Mercer | Mettl Internship */}
-            <Exp_prop
+            <ExperienceCard
               img={MercerMettl}
               title="Mercer | Mettl"
               subtitle="Software Developer Intern"
@@ -51,7 +45,7 @@ const Experience = () => {
             />
 
             {/* Webriy Internship */}
-            <Exp_prop
+            <ExperienceCard
               img={Webriy}
               title="Webriy"
               subtitle="Software Developer Intern"
@@ -63,7 +57,7 @@ const Experience = () => {
             />
 
             {/* GDSC IIIT Vadodara */}
-            <Exp_prop
+            <ExperienceCard
               img={GDSC}
               title="GDSC IIIT Vadodara"
               subtitle="Member"
@@ -73,7 +67,7 @@ const Experience = () => {
             />
 
             {/* Badminton Club */}
-            <Exp_prop
+            <ExperienceCard
               img={Badm_Sec}
               title="Badminton Club, IIIT Vadodara"
               subtitle="Club Secretary"
@@ -82,7 +76,7 @@ const Experience = () => {
             />
 
             {/* Literature Committee */}
-            <Exp_prop
+            <ExperienceCard
               img={Literature}
               title="Literature Committee, IIITV-ICD"
               subtitle="Member"
@@ -92,7 +86,7 @@ const Experience = () => {
             />
 
             {/* IIT Bombay Techfest */}
-            <Exp_prop
+            <ExperienceCard
               img={IITB}
               title="IIT Bombay Techfest 2017"
               subtitle="Junior Participant"
@@ -106,6 +100,6 @@ const Experience = () => {
       <Skills />
     </>
   );
-};
+}
 
 export default Experience;

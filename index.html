@@ -3,16 +3,29 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Ved Prakash Meena 
-  </title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Ved Prakash Meena</title>
+  <script>
+    // Applies the stored theme before first paint. Without this the prerendered page
+    // paints light and flips to dark once React mounts.
+    (function () {
+      try {
+        var stored = window.localStorage.getItem("portfolio-theme");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
+        document.documentElement.classList.toggle("dark", theme === "dark");
+      } catch (error) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
 </head>
 
-<body class="darkMode">
+<body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

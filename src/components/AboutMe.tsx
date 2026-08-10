@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,9 +12,17 @@ import {
   Server,
   Tv,
   GitBranch,
+  type LucideIcon,
 } from "lucide-react";
 
-const SkillCard = ({ icon: Icon, title, description, className }) => (
+export interface SkillCardProps {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  className: string;
+}
+
+const SkillCard = ({ icon: Icon, title, description, className }: SkillCardProps) => (
   <div
     className={`bg-white/5 dark:bg-slate-800/50 backdrop-blur-md p-4 rounded-xl border border-slate-600 dark:border-slate-700 shadow-md text-[#00040f] dark:text-slate-300 ${className}`}
   >
@@ -26,7 +32,7 @@ const SkillCard = ({ icon: Icon, title, description, className }) => (
   </div>
 );
 
-const AboutMe = () => {
+const AboutMe = (): JSX.Element => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
